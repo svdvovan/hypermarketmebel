@@ -1,23 +1,10 @@
 package SoftMebel;
 import java.io.IOException;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
+
 public class Divan {
     public static void main(String[] args) throws IOException {
 
@@ -29,10 +16,6 @@ public class Divan {
         Elements Category = doc1.getElementsByClass("section-h1");
         Elements Name = doc1.getElementsByClass("main-item__title-name");
         Elements lHref = doc1.select("a.d_block");
-
-
-//     System.out.print(Category.text()+ " " + links1.select("a[href]").attr("abs:href"));
-
 
 
         int y = 0;
